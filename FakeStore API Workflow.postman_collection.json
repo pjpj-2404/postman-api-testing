@@ -1,11 +1,11 @@
 {
 	"info": {
-		"_postman_id": "ecc1a652-35dc-46f2-9592-2e97d4c2b460",
-		"name": "FakeStore API Workflow",
+		"_postman_id": "a324ba67-0027-461d-afed-2041ef1b5dc4",
+		"name": "FakeStore API Workflow Copy",
 		"description": "End-to-end e-commerce workflow using FakeStore API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "48326422",
-		"_collection_link": "https://poojajugale24-5542425.postman.co/workspace/8466da9f-58ae-4b7e-a154-a29d685641bd/collection/48326422-ecc1a652-35dc-46f2-9592-2e97d4c2b460?action=share&source=collection_link&creator=48326422"
+		"_collection_link": "https://poojajugale24-5542425.postman.co/workspace/8466da9f-58ae-4b7e-a154-a29d685641bd/collection/48326422-a324ba67-0027-461d-afed-2041ef1b5dc4?action=share&source=collection_link&creator=48326422"
 	},
 	"item": [
 		{
@@ -63,6 +63,20 @@
 		},
 		{
 			"name": "Search Product by Category",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"check for response code\", function () {\r",
+							"    pm.response.to.have.status(200);"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [
